@@ -47,7 +47,7 @@ export class Recourse {
         if (typeof path !== "string") {
             data = path;
         }
-        const promise = json(JSON.stringify(data));
+        const promise = json('');
         this.data.set(name, data);
         return promise;
     }
