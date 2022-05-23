@@ -7,6 +7,6 @@ export declare class Recourse {
     data: Map<string, any>;
     loadImage(path: string, name?: string): Promise<HTMLImageElement | SVGImageElement | HTMLVideoElement | HTMLCanvasElement | ImageBitmap | OffscreenCanvas | null>;
     loadCSV(path: string | any, name: string): Promise<import("d3-dsv").DSVRowArray<string>>;
-    loadJSON(path: string | any, name: string): Promise<unknown>;
+    loadJSON(path: string | any, name: string): void;
 }
 export declare const recourse: Recourse;
